@@ -1,0 +1,14 @@
+echo "\"(Ôo)' >> 1-confused_smiley
+echo '#!/bin/bash' > 2-hellofile
+echo 'cat /etc/passwd' >> 2-hellofile
+echo '#!/bin/bash' > 3-twofiles
+echo 'cat /etc/passwd /etc/hosts' >> 3-twofiles
+echo '#!/bin/bash' > 4-lastlines
+echo 'tail -10 /etc/passwd' >> 4-lastlines
+echo '#!/bin/bash' > 5-firstlines
+echo 'head -10 /etc/passwd' >> 5-firstlines
+echo '#!/bin/bash' > 6-third_line
+echo 'head -3 iacta | tail -1' >> 6-third_line
+echo '#!/bin/bash' > 7-file
+echo 'touch *\\\\"Best School\"\\\\\*$\?*****:)"
+echo "Best School" > "*\\\\'\"Best School\"\\\\\*$\?*****:)"
