@@ -2,7 +2,7 @@
 # This script displays numbers 1-20 with special messages for 4, 9, and 17
 
 counter=1
-while [ $counter -le 20 ]
+while [ "$counter" -le 20 ]
 do
     case $counter in
         4)
@@ -22,5 +22,5 @@ do
             ;;
     esac
     
-    counter=$(expr $counter + 1)
+    counter=$((counter + 1))
 done

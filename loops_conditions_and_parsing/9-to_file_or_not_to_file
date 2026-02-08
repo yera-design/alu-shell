@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This script shows if the file exists,empty, regular or does not exist
 file="school"
 if [[ -e $file ]]
 	then
