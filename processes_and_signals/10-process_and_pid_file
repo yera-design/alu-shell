@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Script that creates a PID file and handles multiple signals
+
+PID_FILE="/var/run/myscript.pid"
+
+# Create PID file with current process ID
+echo $$ > $PID_FILE
+
+# Cleanup function to remove PID file and exit
+cleanup() {
+    rm -f $PID_FILE
+    exit 0
+}
+
+# Set up signal traps
+trap "echo 'I hate the kill command'; cleanup" SIGTERM
+trap "echo 'Y U no love me?!'" SIGINT
+trap "cleanup" SIGQUIT
+
+# Infinite loop
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
